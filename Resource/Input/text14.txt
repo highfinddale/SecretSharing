@@ -1,0 +1,45 @@
+Recently, some attribute-based access control schemes [7]–
+[9], [15], [16] were proposed to ensure the data confidentiality
+in the cloud. It allows data owners to define an access structure
+on attributes and encrypt the data under this access structure,
+such that data owners can define the attributes that the user
+needs to possess in order to decrypt the ciphertext. However,
+the policy updating becomes a difficult issue when applying
+ABE methods to construct access control schemes, because
+once data owner outsource the data into cloud, they won’t store
+in local systems. To change the access policies of encrypted
+data in the cloud, a trivial method is to let data owners retrieve
+the data and re-encrypt it under the new access policy, and then
+send it back to the cloud server. But this method will incur a
+high communication overhead and heavy computation burden
+on data owners.
+In [1], the authors proposed a Key-Policy Attribute-Based
+Encryption method and discussed on how to change the
+policies on keys. In [10], the authors also proposed a ciphertext
+delegation method to update the policy of ciphertext. However,
+these methods cannot satisfy the completeness requirement,
+because they can only delegate key/ciphertext with a new
+access policy which is more restrictive than the previous policy.
+Furthermore, they cannot satisfy the security requirement
+either. For example, when a new attribute is added into a
+threshold gate and the threshold gate is changed from (t;n) to a
+(t+1;n+1), both of their methods will set the share of the new
+attribute to be 0. In this case, users who only holds t attributes
+(excluding the new attribute) can satisfy new (t+1;n+1)-gate.
+In [16], the ciphertext can be re-encrypted by any valid users
+by decrypting it first. Thus, a new outsourced policy updating
+method is desired for ABE systems.
+In this paper, we have investigated the policy updating problem
+in big data access control systems and formulated some
+challenging requirements of this problem. We have developed
+an efficient method to outsource the policy updating to the
+cloud server, which can satisfy all the requirements. We have
+also proposed an expressive attribute-based access control
+scheme for big data in the cloud, and designed policy updating algorithms for different types of access policies. Furthermore,
+we proposed a method which enables data owners to check the
+correctness of the ciphertext updating. We also analyzed our
+scheme in terms of correctness, completeness, security and
+performance. Although the policy updating algorithms were
+designed based on Lewko and Waters’ scheme, our ideas and
+methods of outsourced policy updating can also be applied to
+other ABE systems.

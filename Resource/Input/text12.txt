@@ -1,0 +1,44 @@
+4 DYNAMIC POLICY UPDATING
+Any access policy can be expressed by either LSSS structure or
+Access Tree Structure, which are defined in the Supplemental
+File. In this section, we only consider monotonic structures,
+and non-monotonic structures can be similarly achieved by
+taking NOT operation as another attribute. Specifically, we first
+design the policy updating algorithms for monotonic boolean
+formulas. Then, we present the algorithms to update LSSS
+structures. Finally, we consider general threshold access tree
+structures by designing algorithms of updating a threshold
+gate.
+4.1 Updating a Boolean Formula
+Access policies with monotonic boolean formulas can be
+represented as the simplest threshold access trees, where the
+non-leaf nodes are AND and OR gates, and the leaf nodes
+correspond to attributes. The monotonic boolean formulas can
+be easily converted to LSSS structure, because the number of
+leaf nodes in the access tree is the same as the number of rows
+in the corresponding LSSS matrix. As shown in Fig. 2, there
+are four basic operations: Attr2OR, Attr2AND, AttrRmOR and
+AttrRmAND.
+To enable the data owner to re-randomize the encryption
+secret s, the encryption information EnInfo(m) of the data
+m should also contain two random vectors ~v and ~w, and the
+public key of each attribute x is known to the data owner as
+(gax ;gbx ). The data owner will run the update key generation
+algorithm to construct the update keys and send them to the
+cloud server. Upon receiving update keys, the cloud server will
+run the ciphertext update algorithm to update ciphertext from
+the previous access policy to the new policy. The update key
+algorithm and the ciphertext update algorithm are designed as
+follows.
+4.2.1 Update Key Generation
+The update key generation algorithm UKGen takes as inputs
+public keys, the encryption information of data m, and the
+previous access policy (M;r) and the new one (M0;r0).
+Suppose the new access policy is described as an n0l0 access
+matrix M0 with r0 mapping its rows to attributes. Since the
+mapping functions r and r0 are non-injective, we let numr(i);M
+and numr(i);M0 denote the number of attribute r(i) in M and
+M0 respectively.
+It first calls the policy comparing algorithm PolicyCompare
+to compare the new access policy (M0;r0) with the previous
+one (M;r), and outputs three sets of row indexes

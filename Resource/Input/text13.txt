@@ -1,0 +1,42 @@
+Theorem 3. Our scheme is secure in the generic bilinear
+group model and random oracle model, if no polynomial time
+adversary can get non-negligible advantage in the security
+game defined in Section 2.3.
+Proof: Our access control scheme is constructed based
+on the CP-ABE method with primer group order (CP-ABEPrimer)
+in [5], which is proved to be secure under generic
+bilinear group model and random oracle model. At an intuitive
+level, this means that if there are any vulnerabilities in the
+scheme, then these vulnerabilities must exploit specific mathematical
+properties of elliptic curve groups or cryptographic
+hash functions used when instantiating the scheme. Let A be
+an adversary who can break our scheme with non-negligible
+advantage. and we will construct an A0 such that it can
+break the CP-ABE-Primer scheme in [5] with non-negligible
+advantage.
+Compared with SSW’s scheme [10], our scheme makes
+full use of the previous ciphertexts encrypted under the old
+access structure. That is if an attribute in the new access
+policy has ever appeared in the previous access policy, the new
+ciphertext component of this attribute can be derived from the
+previous ciphertext component with the update key. The data
+owner only needs to compute ciphertext components for new
+attributes. Moreover, in our scheme, we also delegate all the
+pairing operations to the server, such that the workload of the
+data owner can be further reduced.
+To evaluate the computation time, we conduct the simulation
+on a Linux system with an Intel Core 2 Duo CPU at 3.16GHz
+and 4.00GB RAM. The code uses the Pairing-Based Cryptography
+library version 0.5.12 to simulate the access control
+schemes. We use a symmetric elliptic curve a-curve, where
+the base field size is 512-bit and the embedding degree is 2.
+The a-curve has a 160-bit group order, which means p is a
+160-bit length prime. All the simulation results are the mean
+of 20 trials. The results are shown in Fig. 4.
+Fig. 4(a) shows the computation time for each type of operation,
+including Attr2OR, Attr2AND for Boolean Formulas Updating
+and Type1, Type2, Type3 for LSSS Structure/Threshold
+Gates Updating. We can see that Type1 operations, which are
+the most common operations when converting an access policy
+to a new one, incur less computation cost on data owners, as
+well as less total computation cost.

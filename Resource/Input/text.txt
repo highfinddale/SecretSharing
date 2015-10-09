@@ -1,0 +1,33 @@
+The first of the 14,233 lines that constitute the Comedy immediately establishes a context for the poem that is both universal and particular. It also immediately compels a reader to realize that this is a difficult text, one that may not be read passively, but must be 'interpreted.' And the exegetical tradition that has grown upon (and sometimes over) the text is so responsive to these characteristics that it often seems to overwhelm its object. There are so many issues raised in the poem, so many raised by its commentators, that one reads Francesco Mazzoni's extraordinarily helpful gloss to this single verse with admiration and instruction without, at first, even noticing that it is twelve pages in length.
+In a private database query system, a client issues queries to a database and obtains the results without
+learning anything else about the database and without the server learning the query. While previous
+work has yielded systems that can efficiently support disjunction queries, performing conjunction queries
+privately remains an open problem. In this work, we show that using a polynomial encoding of the
+database enables efficient implementations of conjunction queries using somewhat homomorphic encryption.
+We describe a three-party protocol that supports efficient evaluation of conjunction queries. Then,
+we present two implementations of our protocol using Paillier’s additively homomorphic system as well
+as Brakerski’s somewhat homomorphic cryptosystem. Finally, we show that the additional homomorphic
+properties of the Brakerski cryptosystem allow us to handle queries involving several thousand elements
+over a million-record database in just a few minutes, far outperforming the implementation using the
+additively homomorphic system.
+Enabling private database queries is an important research problem that arises in many real-world settings.
+The problem can be thought of as a generalization of symmetric private information retrieval (SPIR) [3, 11]
+where clients can retrieve records by specifying complex queries. For example, the client may ask for the
+records of all people with age 25 to 29 who also live in Alaska, and the server should return these records
+without learning anything about the query. The client should learn nothing else about the database contents.
+In this work we explore the use of somewhat homomorphic encryption (SWHE) [7] for the design of
+private database query protocols. In particular, we show that certain polynomial encodings of the database
+let us implement interesting query types using only homomorphic computations involving low-degree polynomials.
+There are now several encryption schemes [1, 2] that efficiently support the necessary low-degree
+homomorphic computations on encrypted data needed for our constructions.
+Unfortunately, being a generalization of SPIR, private database queries is subject to all the same inherent
+inefficiency constraints as SPIR. To understand these limitations let us consider the two parties involved in
+the basic setup: the client and the server. The server has a database and the client has a query. We seek
+a protocol that gives the client only those records that match its query without the server learning any
+information about the query. In this setting the server must process the entire database for every query;
+otherwise, it would learn that the unprocessed records do not match the query. Moreover, the server has to
+return to the client as much data as the number of records in the database, or else the database would learn
+some information about the number of records that match the query. Thus, for large databases, the server
+is forced to do a considerable amount of work, rendering such systems impractical in most scenarios.
+To overcome these severe limitations we modify the basic model a bit and consider a setting in which the
+database server is split into two entities called the “server” and the “proxy.”

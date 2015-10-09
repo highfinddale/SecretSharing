@@ -1,0 +1,71 @@
+Another domain in informatics sciences presents his
+importance and success of resolving problems, especially
+the ones related to time and complexity.
+This is the optimisation techniques of data mining
+sciences. The optimisation algorithms are inspired
+from the real life and categorized on several domains
+like trajectory methods and the evolutionary
+methods such as genetic algorithms. These algorithms
+are inspired from the Darwinian evolution of
+biological populations [12]. However, in the light of
+success observed of these methods, the researchers
+started to apply it in different domains even in cryptography,
+which gave the birth of evolutionary cryptography
+in which the researches try to incorporate
+the evolutionary methods in cryptographic schemes
+in order to enhance the security level of these
+cryptosystems as we will see later on.
+In this work, we improve the security level of one of
+the known homomorphic encryption schemes which
+is named the TSZ (To, Safavi-Naini and Zhang) by
+combining between obfuscation and encryption of
+data by introducing the genetic algorithms. This
+paper is organised as follows: we present at first
+some related works then we introduce some essential
+information and backgrounds in order to get
+much better understanding this work. After that we
+describe our proposal by presenting the cryptosystem;
+then a scenario of the utilisation of this system
+in a secure retrieve protocol named PIR protocol
+using this arrangement. At the end we discuss his
+performance against known attacks by evaluating it
+in two steps: first theoretically and then we conduct
+a set of experiments and compare the results with
+some existing cryptosystems.
+The privacy preserving is a broadly known and
+sensitive domain, many works are answered on this
+matter. In [01], the authors give a general review
+about privacy preserving over published data and its
+techniques. In [15], the authors propose a composition
+bearing a general discussion about privacy
+challenges in great user profiling data techniques
+using EEXCESS benchmark. In [17], the authors
+show a general survey about using data mining
+techniques and algorithms in the privacy preserving
+domain. The papers introduced in [21] is a state of
+the art of privacy preserving data mining in which
+the authors present a general thought about privacy
+preserving techniques and their focus on the role of
+data mining on this theme.
+Concerning the homomorphic encryption, many
+works are executed in this area. The majority of
+homomorphic propositions go to the fact of using
+the identity or specific attributes related to the user
+in order to ensure the aim of this topic such as in
+[02] where the authors give the general presentation
+of identity based encryption (IBE), then they proposed
+two approaches of IBE scheme based on
+fuzzy identity and study his security point in terms
+of keys sizes and security proofs. The homomorphic
+encryption was applied in several axis of privacy
+preserving domain. In access control such as in [25]
+the authors proposed a new attribute based encryption
+(ABE) scheme for fine-grained access control,
+and in [27], where we saw a proposition of a hierarchical
+key assignment (HKA) based encryption
+scheme for access control in which the. Another
+kind of researches interested by studying the homomorphic
+schemes like the papers in [13] and [07]
+where the authors present their surveys about some
+homomorphic encryption by evaluating it in term of
+their complexity and security levels.

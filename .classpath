@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="Huffman.java" including="secretshare/|securesearch/" kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry exported="true" kind="lib" path="Lib/stanford-postagger-2014-08-27/stanford-postagger-2014-08-27/stanford-postagger-3.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Softwares/icrawl-1.0.RC1/icrawl-1.0.RC1/lib/textrank-1.0.RC.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Softwares/icrawl-1.0.RC1/icrawl-1.0.RC1/lib/lucene-analyzers-common-4.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Softwares/icrawl-1.0.RC1/icrawl-1.0.RC1/lib/lucene-core-4.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Softwares/icrawl-1.0.RC1/icrawl-1.0.RC1/lib/lucene-snowball-3.0.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Softwares/icrawl-1.0.RC1/icrawl-1.0.RC1/lib/stanford-corenlp-3.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Softwares/icrawl-1.0.RC1/icrawl-1.0.RC1/lib/guava-11.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Softwares/icrawl-1.0.RC1/icrawl-1.0.RC1/lib/commons-math-2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/Softwares/org-apache-commons-codec.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

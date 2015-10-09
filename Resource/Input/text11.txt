@@ -1,0 +1,47 @@
+The cloud server is curious about the stored data and messages
+it received during the services. But it is assumed that the cloud
+server will not collude with users, i.e., it will not send the
+ciphertexts under previous policies to users, whose attributes
+can satisfy previous access policies but fail to satisfy new
+access policies. Data owners are assumed to be fully trusted.
+The users are assumed to be dishonest, i.e., they may collude to
+access unauthorized data. The authorities can be corrupted or
+compromised by the attackers. We assume that the adversary
+can corrupt authorities only statically, but key queries can be
+made adaptively.
+We now describe the security model of our system by the
+following game between a challenger and an adversary:
+Setup. The global setup algorithm is run. The adversary
+specifies a set S0
+ASA of corrupted authorities. The challenger
+generates secret/public key pairs by running the authority setup
+algorithm. For uncorrupted authorities in SA ??S0
+A, the challenger
+sends only public keys to the adversary. For corrupted
+authorities in S0
+A, the challenger sends both public keys and
+secret keys to the adversary.
+
+Policy Checking Entity Free: In ABAC, access policies
+are defined by data owners but do not require any
+entity (e.g., the server) to check these policies. Instead,
+access policies in ABAC are enforced implicitly by the
+cryptography. Due to this key feature, ABAC is widely
+applied to control big data in cloud environments, where
+cloud servers are not trusted to enforce access policies.
+2) Storage Efficiency: In traditional Public Key Cryptography,
+for each data, multiple copies of ciphertexts are
+produced whose number is proportional to the number
+of users. Considering the high volume of big data, it
+incurs a huge storage overhead even when only doubling
+the volume of big data. Fortunately, in ABAC, only one
+copy of ciphretext is generated for each data, which can
+reduce the storage overhead significantly.
+3) Dynamic Policies but Same Keys: Data owners can use
+the same public key to encrypt data under different
+access policies, and users do not need to change their
+secret keys either. What’s more, data owners can change
+access policies of existing ciphertexts by simply sending
+a request to the cloud server, and let the server do
+the policy change without leaking out any sensitive
+information of the data as well as the keys.
